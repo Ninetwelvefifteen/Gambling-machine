@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Casino Tung Tung Sahur</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+<form action="/gambling" method="get" class="grid">
+
+    <!-- keep balance between requests -->
+    <input type="hidden" name="balance" value="{{ balance }}">
+
+    {% for i in range(1, 31) %}
+        <button
+            name="bet"
+            value="{{ i }}"
+            class="
+                {% if i == bet %}red{% endif %}
+                {% if i == correct %}green{% endif %}
+            ">
+            {{ i }}
+        </button>
+    {% endfor %}
+
+</form>
+
+<h2>You bet: {{ bet }}</h2>
+<h2>Correct number: {{ correct }}</h2>
+<h2>Balance: {{ balance }}</h2>
+
+</body>
+</html>

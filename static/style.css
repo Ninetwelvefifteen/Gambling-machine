@@ -1,0 +1,48 @@
+body {
+    background-color: black;
+    color: red;
+}
+.center-imglogo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 500px;
+    height: 100px;
+}
+.center-imgmap {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.center-text {
+    text-align: center;
+}
+.files-button {
+    display: block;
+    padding: 10px 20px;
+    font-size: 18px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    gap: 10px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+button {
+    padding: 20px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.red {
+    background-color: red;
+    color: white;
+}
+
+.green {
+    background-color: green;
+    color: white;
+}
