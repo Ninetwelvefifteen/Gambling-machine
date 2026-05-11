@@ -34,3 +34,18 @@ def gambling_page(request: Request, bet: int, balance: int):
         "correct": correct,
         "balance": balance
     })
+
+@app.get("/login")
+async def login_page(request: Request):
+    return templates.TemplateResponse(
+        "login.html",
+        {"request": request}
+    )
+
+
+@app.get("/register")
+async def register_page(request: Request):
+    return templates.TemplateResponse(
+        "register.html",
+        {"request": request}
+    )
